@@ -8,6 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 const postModel = new PostModel(db)
+const port = 3000
 
 app.get("/post", async (req, res) => {
     try {
@@ -51,6 +52,6 @@ app.delete("/post/:id", async (req, res) => {
     }
 })
 
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta http://localhost:3000")
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta http://localhost:${port}`)
 })
