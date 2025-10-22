@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Mini Blog</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mini Blog</h1>
+
+        <form id="postForm">
+            <input type="hidden" id="postId">
+
+            <input type="text" id="title" placeholder="Título do post" required />
+            <textarea id="content" placeholder="Conteúdo do post"></textarea>
+
+            <button type="submit">Salvar Post</button>
+
+            <div id="posts"></div>
+        </form>
+    </div>
+</body>
+</html>
